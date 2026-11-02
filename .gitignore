@@ -1,0 +1,51 @@
+# --- Secrets ---------------------------------------------------------------
+# .env.example is the committed template; real values never are.
+.env
+.env.*
+!.env.example
+
+# --- Python ----------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# --- Virtualenvs -----------------------------------------------------------
+.venv/
+venv/
+env/
+ENV/
+
+# --- Django ----------------------------------------------------------------
+# SQLite is the production database too, so the file itself is deliberately
+# never committed — back it up, don't version it.
+*.sqlite3
+*.sqlite3-journal
+*.sqlite3-wal
+*.sqlite3-shm
+db.sqlite3*
+/media/
+/staticfiles/
+*.log
+
+# --- Tooling ---------------------------------------------------------------
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+
+# --- Editors / OS ----------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini
